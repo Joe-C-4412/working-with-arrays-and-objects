@@ -40,7 +40,7 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  for(var key in values)      //Code Here
 }
 
 
