@@ -23,7 +23,7 @@ var carDetails = {
 
 //Code Here
 
-
+const { color, make, model, year } = carDetails
 
 ////////// PROBLEM 2 //////////
 
@@ -34,14 +34,12 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
-  
+  const {firstName, lastName, title} = obj  //Code Here
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -54,8 +52,18 @@ function greeting( obj ) {
 */
 
 //Code Here
+const states = {
+  utah: 4,
+  california: 3, 
+  texas: 2, 
+  arizona: 3
+}; 
 
-
+const totalPopulation = (obj) => {
+  const {utah, california, texas, arizona} = obj;
+  const total = utah + california + texas + arizona; 
+  return total
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -69,6 +77,18 @@ function greeting( obj ) {
 
 //Code Here
 
+const foodIngredients = {
+  carb: 'bread', 
+  fat: 'gluten', 
+  protein: 'meat'
+}
+
+const ingredients = (obj) => {
+  ingArray = []
+  const { carb, fat, protein } = obj; 
+  ingArray.push[0]
+  return ingArray
+}
 
 
 ////////// PROBLEM 5 //////////
