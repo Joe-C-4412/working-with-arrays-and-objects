@@ -128,7 +128,8 @@ function secrets (obj) {
 //   three: 3
 // }
 
-// for(var key in deleteAllThethings) {
+// for(let key in deleteAllThethings) {
+//   if()
 //   delete deleteAllThethings[key]
 // }
 
@@ -162,6 +163,7 @@ function removePassword (obj) {
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
+
 var deleteTheBigNumbers = {
   first: 10,
   second: 20,
@@ -176,7 +178,11 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
-
+for (let key in deleteTheBigNumbers) {
+  if(deleteTheBigNumbers[key] > 100) {
+    delete deleteTheBigNumbers[key]
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -189,7 +195,14 @@ var deleteTheBigNumbers = {
 
 //Code Here
 
-
+function startsWithK (obj) {
+  for(let key in obj) {
+    if(key.startsWith('k')) {
+      delete obj[key]
+    }
+  }
+  return obj
+}
 
 ////////// PROBLEM 8 //////////
 
