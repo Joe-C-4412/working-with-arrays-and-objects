@@ -40,9 +40,11 @@
 */
 
 function showValues( obj ) {
-  for(var key in obj) {
-
-  }     
+  let cstring = ""
+  for(let key in obj) {
+    cstring += obj[key] 
+  } 
+  return cstring    
 } 
 
 
@@ -81,11 +83,14 @@ function greaterThan10 ( obj ) {
 
 //Code Here
 
+
+
 function double ( obj ) {
   for (let key in obj) {
-    obj[key] * 2
+    obj[key] = obj[key] * 2
   }
-} return obj
+  return obj
+} 
 
 ////////// PROBLEM 4 //////////
 
@@ -99,6 +104,16 @@ function double ( obj ) {
 
 //Code Here
 
+function secrets (obj) {
+  let cstring = ""
+  for (let key in obj) {
+    if (key.startsWith('sh')) {
+      cstring += obj[key]
+    }
+  }
+  return cstring
+}
+  
 
 
 /* 
@@ -129,6 +144,18 @@ function double ( obj ) {
 */
 
 //Code Here
+
+function removePassword (obj) {
+  for(let key in obj) {
+    // console.log(key)
+    // console.log(obj[key])
+    if(key = 'password') {
+      delete obj[key]
+    } 
+  }
+  return obj
+}
+
 
 
 
