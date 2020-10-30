@@ -40,8 +40,10 @@
 */
 
 function showValues( obj ) {
-  for(var key in values)      //Code Here
-}
+  for(var key in obj) {
+
+  }     
+} 
 
 
 
@@ -53,9 +55,21 @@ function showValues( obj ) {
   Return the updated object.
 */
 
+
+// function stateLooper(obj) {
+//   for (let key in obj) {
+//     if (obj[key] > 3000000) obj[key] = 0; // Code here
+//   }
+//   return obj;
+// }
 //Code Here
 
-
+function greaterThan10 ( obj ) {
+  for (let key in obj) {
+    if (obj[key] > 10) obj[key] = 0
+  }
+  return obj
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -67,7 +81,11 @@ function showValues( obj ) {
 
 //Code Here
 
-
+function double ( obj ) {
+  for (let key in obj) {
+    obj[key] * 2
+  }
+} return obj
 
 ////////// PROBLEM 4 //////////
 
