@@ -77,16 +77,16 @@ const totalPopulation = (obj) => {
 
 //Code Here
 
-const foodIngredients = {
-  carb: 'bread', 
-  fat: 'gluten', 
-  protein: 'meat'
-}
+// const foodIngredients = {
+//   carb: 'bread', 
+//   fat: 'gluten', 
+//   protein: 'meat'
+// }
 
 const ingredients = (obj) => {
-  ingArray = []
+  let ingArray = []
   const { carb, fat, protein } = obj; 
-  ingArray.push[0]
+  ingArray.push(carb, fat, protein);
   return ingArray
 }
 
@@ -109,6 +109,10 @@ const ingredients = (obj) => {
 
 
 
+function largeNumbers( { first, second, third } ) {
+  return Math.min(first, second, third)
+}
+
 ////////// PROBLEM 6 //////////
 
 /*
@@ -118,5 +122,9 @@ const ingredients = (obj) => {
 */
 
 //Code Here
+
+function numberGroups( { a, b, c } ) {
+  
+}
 
 
