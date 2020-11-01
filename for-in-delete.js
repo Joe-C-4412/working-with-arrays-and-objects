@@ -220,7 +220,7 @@ function startsWithK (obj) {
 function hiddenTreasure (obj) {
   for(let key in obj) {
     if(key.includes('treasure')) {
-      //skip or move to the next key...not sure how to write this one out
+      // obj[key] = obj[key] //skip or move to the next key...not sure how to write this one out
     } else {
       delete obj[key]
     }
