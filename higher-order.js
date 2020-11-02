@@ -83,8 +83,8 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 
 //Code Here
 let totalPopulation = populations.reduce(function(acc, element, index, array) {
-
-})
+  return (acc += element)
+}, 0)
 
 
 //  = populations.reduce(/* Provide Your Callback Here */)
