@@ -52,13 +52,24 @@ var employees = [
 
 //Code Here
 
-// function emloyeeUpdater {
+// function employeeUpdater {
 //   for(let i = 0, i < 5; i++) {
 //     if( i === "Theo") delete[i] {
 //       else if ( "firstname" === "Lorie") employees.
 //     }
 //   }
 // }
+
+function employeeUpdater () {
+  for(let i = 0; i < employees.length; i++) {
+    if(employees[i].firstName === 'Theo') {
+      employees.splice(i, 1)
+    } else if(employees[i].firstName === 'Lorie') {
+      employees[i].department = 'HR'
+    }
+  }
+  return employees
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -112,8 +123,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1]
+var fluffy2ndFriend = cat.catFriends[1].name
 
 
 
