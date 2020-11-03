@@ -52,7 +52,13 @@ var employees = [
 
 //Code Here
 
-
+// function emloyeeUpdater {
+//   for(let i = 0, i < 5; i++) {
+//     if( i === "Theo") delete[i] {
+//       else if ( "firstname" === "Lorie") employees.
+//     }
+//   }
+// }
 
 ////////// PROBLEM 2 //////////
 
@@ -70,7 +76,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
+function removeDuplicates() {
+  let uniqueChars = [];
+  workplaceAccidents.forEach((n) => {
+      if (!uniqueChars.includes(n)) {
+          uniqueChars.push(n);
+      }
+  });
 
+  return uniqueChars;
+}
 
 ////////// PROBLEM 3 //////////
 
