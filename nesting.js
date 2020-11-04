@@ -166,7 +166,9 @@ var myCar = {
 
 //Code Here
 
-
+function recordCleaner() {
+  forEach(element => console.log(element))
+}
 
 ////////// PROBLEM 5 //////////
 
