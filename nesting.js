@@ -163,11 +163,24 @@ var myCar = {
     2. Loop over the accidents array.
     3. Change atFaultForAccident from true to false.
 */
-
+// function employeeUpdater () {
+//   for(let i = 0; i < employees.length; i++) {
+//     if(employees[i].firstName === 'Theo') {
+//       employees.splice(i, 1)
+//     } else if(employees[i].firstName === 'Lorie') {
+//       employees[i].department = 'HR'
+//     }
+//   }
+//   return employees
+// }
 //Code Here
 
 function recordCleaner() {
-  forEach(element => console.log(element))
+  for(let i = 0; i < myCar.length; i++) {
+    if(myCar.accidents[atFaultForAccident] = true) {
+      yCar.accidents[atFaultForAccident] = false
+    }
+  }
 }
 
 ////////// PROBLEM 5 //////////
@@ -187,4 +200,24 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
+function looper () {
+  let rows = numsArr.length
+  for(let i = 0; i < rows; i++) {
+    let items = numsArr[i].length
+    for(let n = 0; n < items; n++) {
+      if numsArr(i,n) = Odd {
+        numsArr.push(i,n) = 'Odd'
+      } else {
+        numsArr(i,n) = 'even'
+      }
+    }
+  }
+}
 
+// function looper () {
+//   for(let i = 0; i < numsArr.length; i++) {
+//     if(numsArr = true) {
+      
+//     }
+//   }
+// }
