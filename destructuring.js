@@ -123,8 +123,34 @@ function largeNumbers( { first, second, third } ) {
 
 //Code Here
 
-function numberGroups( { a, b, c } ) {
+// function numberGroups( { a, b, c } ) {
   
+// }
+
+// const testObj = {
+//   a: [3,3,5 5],
+//   b: [45,5,33,3],
+//   c: [56,4,4,88],
+// }
+
+// const numberGroups({a, b, c}) => {
+//   if(a.lenth > b.length && a.length > c.length) {
+//     return a
+//   } else if (b.length > a.length && b.lenght > c.length) {
+//     return b
+//   } else {
+//     return c
+//   }
+// }
+
+const numberGroups - ({a,b,c}) => {
+  let sortedArrays = [a, b, c]
+  sortedArrays.sort((a,b) => {
+    return b.length - a.length
+  })
+  return sortedArrays[0]
 }
 
 
+
+// or you could do this// sortedArrays.sort((a,b) => b.length - a.length)

@@ -136,9 +136,11 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 
-let orderTotals = orders.map(function(element, index, array) {
-    return element.price + element.tax
+let orderTotals = orders.map(function(element) {
+  return element.price * (1 + element.tax)
   })
+
+  
 
 
 // let orderTotals = orders.map(function(element, index, array) {
@@ -170,5 +172,12 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 let bobsTotal = purchases.reduce(function(acc, element, index, array) {
   return (acc += element.price)
 }, 0)
+
+let bobsTotal = purchase.filter(element => element.owner === 'Bob'). reduce((acc.cv) =>{
+  return (acc + cv.price)
+})
+  
+  }
+})
 
 

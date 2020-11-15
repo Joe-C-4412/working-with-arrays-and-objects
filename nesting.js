@@ -60,6 +60,23 @@ var employees = [
 //   }
 // }
 
+// const employeeUpdater = () => {
+//   employees.forEach((element, index, array) => {
+//     // console.log(element)
+//     if(element.firstName === 'Theo') {
+//       // console.log(element)
+//       employees.splice(index, 1)
+//     } 
+//     if(element.firstName === 'Lorie'){
+//       // console.log(element)
+//       element.department = 'HR'
+//     }
+//   })
+// }
+// employeeUpdater()
+
+
+
 function employeeUpdater () {
   for(let i = 0; i < employees.length; i++) {
     if(employees[i].firstName === 'Theo') {
@@ -87,16 +104,28 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
-function removeDuplicates() {
-  let uniqueChars = [];
-  workplaceAccidents.forEach((n) => {
-      if (!uniqueChars.includes(n)) {
-          uniqueChars.push(n);
+const removeDuplicates = () => {
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let j = i + 1: j < workplaceAccidents.length; j++) {
+      if(workplaceAccidents[i] === workplaceAccidents[j]) {
+        workplaceAccidents.splice(j,1)
+        j--
       }
-  });
-
-  return uniqueChars;
+    }
+  }
+  return workplaceAccidents  
 }
+
+// function removeDuplicates() {
+//   let uniqueChars = [];
+//   workplaceAccidents.forEach((n) => {
+//       if (!uniqueChars.includes(n)) {
+//           uniqueChars.push(n);
+//       }
+//   });
+
+//   return uniqueChars;
+// }
 
 ////////// PROBLEM 3 //////////
 
@@ -175,13 +204,22 @@ var myCar = {
 // }
 //Code Here
 
-function recordCleaner() {
-  for(let i = 0; i < myCar.length; i++) {
-    if(myCar.accidents[atFaultForAccident] = true) {
-      yCar.accidents[atFaultForAccident] = false
+const recordCleaner = () => {
+  myCar.accidents.forEach((element => {
+    if(element.atFaultForAccident) {
+      element.atFaultForAccident = false
     }
-  }
+  })
+  return myCar; 
 }
+
+// function recordCleaner() {
+//   for(let i = 0; i < myCar.length; i++) {
+//     if(myCar.accidents[atFaultForAccident] = true) {
+//       yCar.accidents[atFaultForAccident] = false
+//     }
+//   }
+// }
 
 ////////// PROBLEM 5 //////////
 
@@ -200,19 +238,56 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
+// const looper = () => {
+//   numsArr.forEach((element, index, array) => {
+//     element.forEach((element, index, array) => {
+//       if(element & 2 === 0){
+//         array[index] = 'even'
+//       } else {
+//         array[index] = 'odd'
+//       }
+//     })
+//   })
+//   return numsArr
+// }
+
+// {
+//   for(i=0;i<numsArr.length;i++) {
+//     for(j=0;j<numsArr[i].length;j++) {
+//       if (numsArr[i][j] % 2 ==0) {
+//         numsArr[i][j]="even"
+//       }
+//       else{
+//         numsArr[i][j]= "odd"
+//       }
+//     }
+//   }
+//   return numsArr
+// }
+
 function looper () {
-  let rows = numsArr.length
-  for(let i = 0; i < rows; i++) {
-    let items = numsArr[i].length
-    for(let n = 0; n < items; n++) {
-      if numsArr(i,n) = Odd {
-        numsArr.push(i,n) = 'Odd'
+  for(let i = 0; i < numsArr.length; i++) {
+    for(let n = 0; n < numsArr[i].length; n++) {
+      if (numsArr[i][j] % 2 ==0) {
+        numsArr[i][j] = 'even'
       } else {
-        numsArr(i,n) = 'even'
+        numsArr[i][j] = 'odd'
       }
     }
   }
+  return numsArr
 }
+
+//     let items = numsArr[i].length
+//      {
+//       if numsArr(i,n) = Odd {
+//         numsArr.push(i,n) = 'Odd'
+//       } else {
+//         numsArr(i,n) = 'even'
+//       }
+//     }
+//   }
+// }
 
 // function looper () {
 //   for(let i = 0; i < numsArr.length; i++) {
